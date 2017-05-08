@@ -1,3 +1,11 @@
+# Redux promise, thunk and saga
+http://redux-promise-thunk-saga.surge.sh/
+
+## Redux async flow using 3 popular libraries:
+- redux-promise
+- redux-thunk
+- redux-saga
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 ## Tech stack

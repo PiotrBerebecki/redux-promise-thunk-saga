@@ -82,3 +82,29 @@ export const NavMenuLink = styled(NavLink).attrs({
     transition: transform .4s;
   }
 `;
+
+export const ListItem = styled(Ul)`
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+  border-bottom: solid 1px #f0f0f0;
+  color: ${colorText};
+  text-align: center;
+`;
+
+export const Title = styled.h1`
+  font-size: 1rem;
+`;
+
+export const ExternalLink = styled.a`
+  color: ${colorPrimary};
+  text-decoration: none;
+
+  &:hover {
+    color: ${colorPrimary};
+    text-decoration: underline;
+  }
+
+  &:active {
+    text-decoration: none;
+  }
+`;

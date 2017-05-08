@@ -3,6 +3,7 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
 import { fetchData } from './promise';
+import { ListItem, ExternalLink } from './../../styled';
 
 class Promise extends Component {
   componentDidMount() {
@@ -10,11 +11,19 @@ class Promise extends Component {
   }
 
   render() {
+    const renderItems = this.props.promise.map((item, idx) => {
+      return <ListItem key={idx}>{item.name}</ListItem>;
+    });
+
     return (
-      <div>
-        {/* {this.props.promise.map(p => <p key={p.name}>{p.name}</p>)} */}
-        Hello
-      </div>
+      <ul>
+        <ListItem>
+          <ExternalLink href="https://github.com/PiotrBerebecki/redux-promise-thunk-saga/blob/master/src/views/promise/promise.js">
+            Async flow using redux-promise*
+          </ExternalLink>
+        </ListItem>
+        {renderItems}
+      </ul>
     );
   }
 }

@@ -15,6 +15,7 @@
     "styled-components": "next"
   },
   "devDependencies": {
+    "npm-run-all": "^4.0.2",
     "react-scripts": "0.9.5",
     "sanitize.css": "^5.0.0"
   },
@@ -22,6 +23,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "renameForSurge": "mv build/index.html build/200.html",
+    "surge": "surge ./build --domain redux-promise-thunk-saga.surge.sh",
+    "deploy": "run-s build renameForSurge surge"
   }
 }

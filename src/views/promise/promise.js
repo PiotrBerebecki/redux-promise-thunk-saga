@@ -5,23 +5,19 @@ const FETCH = 'promise/FETCH';
 export function fetchData() {
   const request = fetch('https://jsonplaceholder.typicode.com/users')
     .then(res => res.json())
-    .then(user => {
-      console.log(user);
-    });
+    .then(users => users);
+
   return {
     type: FETCH,
-    payload: [{ name: 'Pete3' }, { name: 'Mike4' }],
+    payload: request,
   };
 }
 
 // reducer
-export default function reducer(
-  state = [{ name: 'Ann1' }, { name: 'Kay2' }],
-  action
-) {
+export default function reducer(state = [], action) {
   switch (action.type) {
     case FETCH:
-      return [...state, action.payload];
+      return action.payload;
     default:
       return state;
   }
