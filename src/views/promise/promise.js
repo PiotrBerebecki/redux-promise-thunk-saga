@@ -3,6 +3,11 @@ const FETCH = 'promise/FETCH';
 
 // actions
 export function fetchData() {
+  const request = fetch('https://jsonplaceholder.typicode.com/users')
+    .then(res => res.json())
+    .then(user => {
+      console.log(user);
+    });
   return {
     type: FETCH,
     payload: [{ name: 'Pete3' }, { name: 'Mike4' }],
