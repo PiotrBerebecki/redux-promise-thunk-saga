@@ -36,13 +36,6 @@ export const HeaderWrapper = styled.section`
               0px 2px 10px ${colorBoxShadowSpread};
 `;
 
-// export const Input = styled.input`
-//   display: block;
-//   margin-left: auto;
-//   margin-right: auto;
-//   text-align: center;
-// `;
-
 export const Ul = styled.ul`
   list-style: none;
 `;
@@ -79,7 +72,7 @@ export const NavMenuLink = styled(NavLink).attrs({
 
   &.selected:after {
     transform: scaleX(1);
-    transition: transform .4s;
+    transition: transform .2s;
   }
 `;
 

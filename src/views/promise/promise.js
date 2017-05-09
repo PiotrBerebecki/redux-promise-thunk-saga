@@ -5,7 +5,7 @@ const FETCH = 'promise/FETCH';
 export function fetchData() {
   const request = fetch('https://jsonplaceholder.typicode.com/users')
     .then(res => res.json())
-    .then(users => users);
+    .then(users => users.slice(0, 10));
 
   return {
     type: FETCH,
@@ -14,7 +14,7 @@ export function fetchData() {
 }
 
 // reducer
-export default function reducer(state = [], action) {
+export default function promiseReducer(state = [], action) {
   switch (action.type) {
     case FETCH:
       return action.payload;
