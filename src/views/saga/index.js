@@ -12,14 +12,14 @@ class Saga extends Component {
 
   render() {
     const renderItems = this.props.saga.map((item, idx) => {
-      return <ListItem key={idx}>{item.name}</ListItem>;
+      return <ListItem key={idx}>{item.email}</ListItem>;
     });
 
     return (
       <ul>
         <ListItem>
           <ExternalLink href="https://github.com/PiotrBerebecki/redux-promise-thunk-saga/blob/master/src/views/saga/saga.js">
-            See source code*
+            See the source code*
           </ExternalLink>
         </ListItem>
         {renderItems}

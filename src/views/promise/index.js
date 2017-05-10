@@ -19,7 +19,7 @@ class Promise extends Component {
       <ul>
         <ListItem>
           <ExternalLink href="https://github.com/PiotrBerebecki/redux-promise-thunk-saga/blob/master/src/views/promise/promise.js">
-            See source code*
+            See the source code*
           </ExternalLink>
         </ListItem>
         {renderItems}

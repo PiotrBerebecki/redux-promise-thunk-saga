@@ -1,17 +1,20 @@
 // constants
 const FETCH = 'thunk/FETCH';
 
-// actions
+// action called by the connected component
 export function fetchData() {
   return dispatch => {
-    fetch('https://jsonplaceholder.typicode.com/comments')
+    fetch('https://jsonplaceholder.typicode.com/users')
       .then(res => res.json())
-      .then(users => {
-        return dispatch({
-          type: FETCH,
-          payload: users.slice(0, 10),
-        });
-      });
+      .then(users => dispatch(dispatchAction(users.slice(0, 10))))
+      .catch(err => []);
+  };
+}
+
+function dispatchAction(users) {
+  return {
+    type: FETCH,
+    payload: users,
   };
 }
 

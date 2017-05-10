@@ -91,6 +91,7 @@ export const Title = styled.h1`
 export const ExternalLink = styled.a`
   color: ${colorPrimary};
   text-decoration: none;
+  user-select: none;
 
   &:hover {
     color: ${colorPrimary};

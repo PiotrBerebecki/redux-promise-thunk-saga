@@ -6,6 +6,8 @@ http://redux-promise-thunk-saga.surge.sh/
 - redux-thunk
 - redux-saga
 
+<img src="./demo/screencast.gif" width="275px" height="auto">
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 ## Tech stack
@@ -13,7 +15,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - redux, react-redux
 - redux-promise, redux-thunk, redux-saga
 - react-router
-- sanitize.css
 - styled-components
 
 Below you will find some information on how to perform common tasks.<br>

@@ -12,14 +12,14 @@ class Thunk extends Component {
 
   render() {
     const renderItems = this.props.thunk.map((item, idx) => {
-      return <ListItem key={idx}>{item.email}</ListItem>;
+      return <ListItem key={idx}>{item.username}</ListItem>;
     });
 
     return (
       <ul>
         <ListItem>
           <ExternalLink href="https://github.com/PiotrBerebecki/redux-promise-thunk-saga/blob/master/src/views/thunk/thunk.js">
-            See source code*
+            See the source code*
           </ExternalLink>
         </ListItem>
         {renderItems}
