@@ -18,8 +18,8 @@ class Thunk extends Component {
     return (
       <ul>
         <ListItem>
-          <ExternalLink href="#">
-            Async flow using redux-saga*
+          <ExternalLink href="https://github.com/PiotrBerebecki/redux-promise-thunk-saga/blob/master/src/views/thunk/thunk.js">
+            See source code*
           </ExternalLink>
         </ListItem>
         {renderItems}

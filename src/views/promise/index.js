@@ -19,7 +19,7 @@ class Promise extends Component {
       <ul>
         <ListItem>
           <ExternalLink href="https://github.com/PiotrBerebecki/redux-promise-thunk-saga/blob/master/src/views/promise/promise.js">
-            Async flow using redux-promise*
+            See source code*
           </ExternalLink>
         </ListItem>
         {renderItems}
